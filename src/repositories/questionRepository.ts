@@ -5,7 +5,7 @@ async function createQuestion(askedBy: string, question:string){
 }
 
 async function getQuestionById(id: number) {
-    return await prisma.questions.findUnique({where: {id}})
+    return await prisma.questions.findUnique({where: {id: id}})
 }
 
 export {
